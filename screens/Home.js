@@ -1,9 +1,15 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, Text, View } from 'react-native';
 
-const Home = () => {
+const Home = ({ navigation }) => {
   return (
-    <Text>Home</Text>
+    <View>
+        <Text>Home</Text>
+        <Button
+            title="App Limit"
+            onPress={() => navigation.navigate('App Limit')}
+        />
+    </View>
   )
 }
 
